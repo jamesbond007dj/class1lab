@@ -2,82 +2,8 @@
 <html>
     <head>
         <title>JAMES BOND'S SITE</title>
-        <style>
-            h1 {
-             font-family:Arial, Helvetica, sans-serif; 
-             color:rgb(179, 0, 0); 
-             background-color: salmon;
-             text-align: center;
-             width: 900px;
-             height: 40px;
-             margin: 5px;
-             padding: 20px;
-             border-color: black;
-             border-spacing: 2px;
-            }
-            h2 {
-             font-family:Arial, Helvetica, sans-serif; 
-             color:black; 
-             background-color: whitesmoke;
-             text-align: center;
-             width: 900px;
-             height: 40px;
-             margin: 5px;
-             padding: 20px;
-             border-color: black;
-             border-spacing: 2px;
-            }
-            nav {
-             color:slateblue; 
-             background-color: thistle;
-             text-align: center;
-             width: 900px;
-             height: 40px;
-             margin: 5px;
-             padding: 20px;
-             border-color: black;
-             border-spacing: 2px;
-            }
-            li {
-             color: slateblue;
-            }
-            p1 {
-             font-family:Arial, Helvetica, sans-serif; 
-             color: rgb(172, 0, 230); 
-             background-color: rgb(248, 205, 167);
-             width: 200px;
-             height: 40px;
-             padding: 20px;
-             margin: 5px;
-            }
-            p2 {
-             color: rgb(75, 8, 199); 
-             background-color: rgb(212, 243, 191);
-             font-family:Arial, Helvetica, sans-serif;
-             width: 200px;
-             height: 40px;
-             padding: 20px;
-             margin: 5px;
-            }
-            p3 {
-             color: rgb(196, 226, 200); 
-             background-color: rgb(236, 150, 193);
-             font-family:Arial, Helvetica, sans-serif;
-             width: 200px;
-             height: 40px;
-             padding: 20px;
-             margin: 5px;
-            }
-            p4 {
-             color: rgb(141, 70, 4); 
-             background-color: rgb(165, 199, 243);
-             font-family:Arial, Helvetica, sans-serif;
-             width: 200px;
-             height: 40px;
-             padding: 20px;
-             margin: 5px;
-            }
-        </style>
+        <link rel="resetsheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
@@ -106,52 +32,7 @@
             <h3> &#169; Casino Royal, Inc &#9824;&#9827;&#9829;&#9830; &#174; &#214;K&#220;Z Media Co. </h3>
         </footer>
 
-        <script> 
-
-            var visitor = prompt ('Welcome, Please let me hear your name');
-                alert ('Glad to meet you, ' + visitor + '! You are welcome to my website!');
-
-                console.log(visitor);
-
-            var actor = prompt('Who is your favorite James Bond actor, ' + visitor +'? CRAIG or BROSNAN or CONNERY; Please write correctly and only in CAPITAL LETTERS');
-            
-            if ( actor == "CRAIG") {
-                alert ( 'You are fairly young fellow');
-            } if ( actor == "BROSNAN") {
-                alert ('You are getting old buddy');
-            } if ( actor == "CONNERY") {
-                alert ('You are classy, but immediately go to a check-up dude at this age');
-            } else {
-                alert ('You are getting there, please be patient, ' + visitor);
-            }
-
-            console.log(actor); 
-
-            var howMany = function() {
-
-            var count = prompt ( visitor + ', what is your age?');
-
-            while (isNaN(count)) {
-                count = prompt ('Please enter your age in numbers');
-
-            }
-
-            return Number(count);
-
-            }; 
-
-            var age = howMany();
-
-            console.log(age);
-
-            if (age > 0 ) {
-                alert ( visitor + ', you are ' + age + ' years old and your favorite James Bond Actor is ' + actor + '! It is not logical, whatever you are always welcome!');
-            } else {
-                alert ( visitor + "! Why don't you try to obey the instructions, dude?")
-            };
-                
-        
-        </script>
+        <script src="\js\app.js"></script>
 
     </body>
 </html>
